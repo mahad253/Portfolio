@@ -4,32 +4,33 @@ import Layout from '../layouts/Layout.astro';
 import { Button } from "@/components/ui/button"
 import { MoonIcon, SunIcon } from "lucide-react"
 import Hero from '@/components/Hero';
-import About from '@/components/About';
 import Experience from '@/components/Experience';
-import Portfolio from '@/components/Portfolio';
 import PortfolioFeed from '@/components/PortfolioFeed';
-import Testimonials from '@/components/Testimonials';
-import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { config } from '../data/config';
-
 ---
 
 <Layout title={config.siteTitle}>
   <head>
+    <title>{config.siteTitle}</title>
     <meta name="description" content={config.description} />
     <meta name="keywords" content={config.keywords} />
     <link rel="icon" href={config.favicon} />
-    <meta property="og:title" content={config.siteTitle} />
-    <meta property="og:description" content={config.description} />
-    <meta property="og:image" content="/path/to/image.jpg" />
-    <meta property="og:url" content="https://yourwebsite.com" />
+
+    <!-- ✅ Open Graph Meta Tags -->
+    <meta property="og:title" content="Portfolio – Mahad" />
+    <meta property="og:description" content="Bienvenue sur mon portfolio ! Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par les technologies web, la conception d’applications robustes et l’intégration de solutions modernes DevOps ou Kafka." />
+    <meta property="og:image" content="https://portfolio-mahad.vercel.app/assets/preview.jpg" />
+    <meta property="og:url" content="https://portfolio-mahad.vercel.app" />
+    <meta property="og:type" content="website" />
+
+    <!-- ✅ Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content={config.social.twitter} />
-    <meta name="twitter:title" content={config.siteTitle} />
-    <meta name="twitter:description" content={config.description} />
-    <meta name="twitter:image" content="/path/to/image.jpg" />
+    <meta name="twitter:title" content="Portfolio – Mahad" />
+    <meta name="twitter:description" content="Mahad MOUSSA ABDILLAHI – Développeur full-stack passionné par les technologies web, Odoo, DevOps, Kafka et Cloud." />
+    <meta name="twitter:image" content="https://portfolio-mahad.vercel.app/assets/preview.jpg" />
   </head>
+
   <main class="min-h-screen bg-background">
     <div class="fixed top-4 right-4 z-50">
       <Button variant="outline" size="icon" class="rounded-full" id="theme-toggle">
@@ -47,8 +48,7 @@ import { config } from '../data/config';
 
 <script>
   const themeToggle = document.getElementById('theme-toggle');
-  
-  // Check for saved theme preference or default to dark theme
+
   if (typeof localStorage !== 'undefined') {
     if (!localStorage.getItem('theme')) {
       document.documentElement.classList.add('dark');
@@ -58,12 +58,8 @@ import { config } from '../data/config';
     }
   }
 
-  // Theme toggle functionality
   themeToggle?.addEventListener('click', () => {
     const isDark = document.documentElement.classList.toggle('dark');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
   });
 </script>
-
-</file>
-</boltArtifact>
