@@ -10,25 +10,20 @@ import Footer from '@/components/Footer';
 import { config } from '../data/config';
 ---
 
-<Layout title={config.siteTitle}>
+<Layout title="Portfolio – Mahad">
   <head>
-    <title>{config.siteTitle}</title>
-    <meta name="description" content={config.description} />
-    <meta name="keywords" content={config.keywords} />
-    <link rel="icon" href={config.favicon} />
+    <!-- ✅ Ceci est ce que WhatsApp ou Discord utilise -->
+    <title>Mahad – Développeur Full-Stack</title>
+    <meta name="description" content="Bienvenue sur mon portfolio personnel. Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par les technologies web, Odoo, DevOps et plus encore." />
+    <meta name="keywords" content="portfolio, Mahad, développeur full-stack, React, Spring Boot, DevOps, Odoo" />
+    <link rel="icon" href="/favicon.svg" />
 
-    <!-- ✅ Balises Open Graph mises à jour -->
+    <!-- Open Graph (peut aider aussi) -->
     <meta property="og:title" content="Mahad – Développeur Full-Stack" />
-    <meta property="og:description" content="Bienvenue sur mon portfolio ! Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par le web, Odoo, DevOps et plus encore." />
-    <meta property="og:image" content="https://portfolio-mahad.vercel.app/assets/preview.jpg" />
+    <meta property="og:description" content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné." />
+    <meta property="og:image" content="/assets/preview.jpg" />
     <meta property="og:url" content="https://portfolio-mahad.vercel.app/" />
     <meta property="og:type" content="website" />
-
-    <!-- ✅ Twitter Card mise à jour -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mahad – Développeur Full-Stack" />
-    <meta name="twitter:description" content="Bienvenue sur mon portfolio ! Découvrez mes projets et compétences en développement web full-stack." />
-    <meta name="twitter:image" content="https://portfolio-mahad.vercel.app/assets/preview.jpg" />
   </head>
 
   <main class="min-h-screen bg-background">
@@ -48,7 +43,6 @@ import { config } from '../data/config';
 
 <script>
   const themeToggle = document.getElementById('theme-toggle');
-
   if (typeof localStorage !== 'undefined') {
     if (!localStorage.getItem('theme')) {
       document.documentElement.classList.add('dark');
