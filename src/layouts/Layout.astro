@@ -1,27 +1,38 @@
 ---
-import { ViewTransitions } from 'astro:transitions';
-
-interface Props {
-  title: string;
-}
-
-const { title } = Astro.props;
+const { title }: { title: string } = Astro.props;
+import { config } from '../data/config';
 ---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content={config.author} />
+  <meta name="description" content={config.description} />
+  <meta name="keywords" content={config.keywords} />
+  <meta name="generator" content={Astro.generator} />
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Mahad - Développeur Full-Stack" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="author" content="Mahad" />
-    <meta name="keywords" content="Développeur Full-Stack" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-    <ViewTransitions />
-  </head>
-  <body>
-    <slot />
-  </body>
+  <!-- 🟢 Icône du site -->
+  <link rel="icon" type="image/svg+xml" href={config.favicon} />
+
+  <!-- 🟢 Titre affiché dans l'onglet -->
+  <title>{title}</title>
+
+  <!-- 🟢 Open Graph = prévisualisation lien (WhatsApp, Discord, etc.) -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={config.description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://portfolio-mahad.vercel.app/" />
+  <meta property="og:image" content="https://portfolio-mahad.vercel.app/assets/preview.jpg" />
+
+  <!-- 🟢 Twitter Card (au cas où) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={config.description} />
+  <meta name="twitter:image" content="https://portfolio-mahad.vercel.app/assets/preview.jpg" />
+</head>
+
+<body>
+<slot />
+</body>
 </html>
