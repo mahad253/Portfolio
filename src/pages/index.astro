@@ -3,6 +3,7 @@ import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro'
 import Hero from '@/components/Hero'
 import Experience from '@/components/Experience'
+import Education from '@/components/Education' // ✅ Ajout du composant
 import PortfolioFeed from '@/components/PortfolioFeed'
 import Footer from '@/components/Footer'
 import { config } from '../data/config'
@@ -15,19 +16,18 @@ import { config } from '../data/config'
     <meta name="keywords" content="portfolio, Mahad, développeur full-stack, React, Spring Boot, DevOps, Odoo" />
     <link rel="icon" href="/favicon.svg" />
 
-    <!-- Métadonnées sociales sans image -->
+    <!-- Métadonnées sociales pour prévisualisation -->
     <meta property="og:title" content="Mahad – Développeur Full-Stack" />
     <meta property="og:description" content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné." />
     <meta property="og:url" content="https://portfolio-mahad.vercel.app/" />
     <meta property="og:type" content="website" />
-
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Mahad – Développeur Full-Stack" />
     <meta name="twitter:description" content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné." />
   </head>
 
   <main class="min-h-screen bg-background">
-    <!-- Bouton de changement de thème (HTML natif) -->
+    <!-- Bouton de changement de thème -->
     <div class="fixed top-4 right-4 z-50">
       <button id="theme-toggle" class="rounded-full border px-3 py-2 hover:bg-muted/40">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -43,6 +43,7 @@ import { config } from '../data/config'
     <!-- Sections -->
     <Hero client:load />
     <Experience client:visible />
+    <Education client:visible /> <!-- ✅ Section ajoutée proprement -->
     <PortfolioFeed client:visible />
     <Footer client:visible />
   </main>
