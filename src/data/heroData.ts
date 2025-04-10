@@ -1,7 +1,7 @@
 export const heroData = {
   name: 'Mahad MOUSSA ABDILLAHI',
   title: 'Développeur Full-Stack',
-  description: `Développeur full-stack passionné par les technologies web, je conçois des applications robustes et maintenables, du frontend réactif à l’architecture backend. J'interviens également sur l’intégration de systèmes Odoo, la mise en place de pipelines DevOps, ainsi que sur la gestion des versions avec Git.`,
+  description: `Développeur full-stack passionné par les technologies web, je suis à la recherche d'une alternance en développement Full-Stack. Je conçois des applications robustes et maintenables, du frontend réactif à l’architecture backend, ainsi que sur la gestion des versions avec Git.`,
   profilePicture: '/assets/mahad.jpg', // à placer dans /public/assets/
   skills: [
     'JavaScript',
@@ -17,7 +17,8 @@ export const heroData = {
     'CI/CD',
     'DevOps',
     'Cloud Computing',
-    'Linux'
+    'Linux',
+    'KeyCloak'
   ],
   contact: {
     github: 'https://github.com/mahad253',

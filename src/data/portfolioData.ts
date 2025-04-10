@@ -1,26 +1,9 @@
-export interface Project {
-  id: number;
-  title: string;
-  summary: string;
-  images: string[];
-  tags: string[];
-  details: {
-    challenge: string;
-    solution: string;
-    impact: string[];
-  };
-  externalLink?: {
-    title: string;
-    url: string;
-  };
-}
-
 export const projects: Project[] = [
   {
     id: 1,
     title: "Dahaboo.com – Site d'annonces Achats/Ventes",
     summary:
-        "Développement complet d'une plateforme de petites annonces permettant aux utilisateurs de publier, rechercher et gérer des annonces en ligne.",
+        "Amélioration d'une plateforme existante de petites annonces permettant aux utilisateurs de publier, rechercher et gérer des annonces en ligne.",
     images: [
       "/assets/dahaboo.png",
       "/assets/dahaboo1.png",
@@ -28,12 +11,12 @@ export const projects: Project[] = [
       "/assets/dahaboo3.png",
       "/assets/dahaboo4.png"
     ],
-    tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+    tags: ["PHP", "MySQL", "HTML", "CSS", "JavaScript", "KeyCloak",],
     details: {
       challenge:
-          "Créer un site web fonctionnel pour répondre à la demande locale de publication et gestion d'annonces sans solution existante.",
+          "Amélioration d'un site web fonctionnel pour répondre à la demande du client au niveau du front-back & keycloak.",
       solution:
-          "Développement d’un site responsive avec interface claire, base de données relationnelle, et système d’authentification utilisateur.",
+          "Interface responsive et claire, base de données relationnelle, et système d’authentification utilisateur.",
       impact: [
         "Site déployé en production et utilisé activement par des centaines d’utilisateurs.",
         "Projet personnel qui m’a permis de mettre en pratique mes compétences full-stack."
@@ -94,6 +77,46 @@ export const projects: Project[] = [
   },
   {
     id: 4,
+    title: "Mot Croisés – Jeu de mots croisés interactif",
+    summary:
+        "Création d'un jeu de mots croisés interactif permettant aux utilisateurs de remplir une grille de mots croisés en ligne avec des indices et des définitions.",
+    images: [
+      "/assets/mc1.png",
+      "/assets/mc2.png",
+      "/assets/mc3.png",
+      "/assets/mc4.png",
+      "/assets/mc5.png",
+      "/assets/mc6.png",
+      "/assets/mc7.png",
+      "/assets/mc8.png",
+      "/assets/mc9.png",
+      "/assets/mc10.png",
+      "/assets/mc11.png",
+      "/assets/mc12.png",
+      "/assets/mc13.png",
+      "/assets/mc14.png",
+      "/assets/mc15.png",
+      "/assets/mc16.png",
+      "/assets/mc17.png"
+    ],
+    tags: ["PHP", "HTML", "CSS", "JavaScript", "JQuery"],
+    details: {
+      challenge:
+          "Concevoir un jeu interactif de mots croisés avec une grille dynamique et la gestion des indices pour les utilisateurs.",
+      solution:
+          "Développement d'une interface intuitive et interactive en JavaScript avec des fonctionnalités de sauvegarde de grille et de validation de réponses.",
+      impact: [
+        "Permet aux utilisateurs de résoudre des grilles de mots croisés en ligne.",
+        "Projet utile pour tester des fonctionnalités interactives et d’interface utilisateur."
+      ]
+    },
+    externalLink: {
+      title: "Voir le projet",
+      url: "https://github.com/mahad253/MotCroises"
+    }
+  },
+  {
+    id: 5,
     title: "Tindify – Service de messagerie temps réel",
     summary:
         "Développement du microservice de messagerie dans une architecture distribuée orientée microservices pour une application de rencontres musicales.",
