@@ -121,7 +121,7 @@ export const projects: Project[] = [
     summary:
         "Développement du microservice de messagerie dans une architecture distribuée orientée microservices pour une application de rencontres musicales.",
     images: ["/assets/tindify-chat.png"],
-    tags: ["Spring Boot", "WebSocket", "Kafka", "Microservices", "Java"],
+    tags: ["Spring Boot", "WebSocket", "Kafka", "Microservices", "Java", "KeyCloak"],
     details: {
       challenge:
           "Mettre en place un service de messagerie scalable, réactif et indépendant, capable de s'intégrer dans une architecture orientée évènements.",
