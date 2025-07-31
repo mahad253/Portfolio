@@ -1,7 +1,8 @@
 export const heroData = {
   name: 'Mahad MOUSSA ABDILLAHI',
   title: 'Alternance Développement Full-Stack',
-  description: `Actuellement en M2 Génie Informatique Logiciel (GIL) et passionné par les technologies web, je suis à la recherche d'une alternance en développement Full-Stack. Je conçois des applications robustes et maintenables, du frontend réactif à l’architecture backend, ainsi que sur la gestion des versions avec Git.`,
+  description: `Actuellement en Master 2 Génie Informatique Logiciel (GIL) et intéressé par les technologies web, je suis à la recherche d'une alternance en développement Full-Stack.
+J’interviens sur la conception d’applications web, du développement de l’interface utilisateur (frontend) à la mise en place de l’architecture côté serveur (backend), avec une utilisation régulière de Git pour la gestion des versions.`,
   profilePicture: '/assets/mahad.jpg', // à placer dans /public/assets/
   skills: [
     'JavaScript',
