@@ -13,7 +13,7 @@ const EducationSection = () => {
     return (
         <section className="bg-background">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8 text-center">🎓 Parcours académique</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center">⧉ Parcours académique</h2>
                 <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3">
                     {educationData.map((edu, index) => (
                         <div key={index} className="mb-8 ml-6">
