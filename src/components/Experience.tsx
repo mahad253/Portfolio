@@ -12,7 +12,9 @@ export default function ExperienceSection() {
     return (
         <section className="bg-background">
             <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8 text-center">Expériences professionnelles</h2>
+                <h2 className="text-3xl font-bold mb-8 text-center text-teal-400 border-b-2 border-teal-400 pb-2">
+                    ⧉ Expériences professionnelles
+                </h2>
                 <div className="relative border-l border-gray-200 dark:border-gray-700 ml-3">
                     {jobs.map((job, index) => (
                         <div key={index} className="mb-8 ml-6">
