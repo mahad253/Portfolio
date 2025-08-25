@@ -10,6 +10,17 @@ export type Education = {
 
 export const educationData: Education[] = [
     {
+        degree: "Master 2 – Génie Informatique pour les Logiciels (GIL)",
+        institution: "Université de Rouen Normandie",
+        location: "Rouen, France",
+        period: "2025 – 2026",
+        details: [
+            "Architecture logicielle et programmation avancée",
+            "Projets en microservices, React, Spring Boot et DevOps",
+            "Travail sur des projets complexes en équipe",
+        ],
+    },
+    {
         degree: "Master 1 – Génie Informatique pour les Logiciels (GIL)",
         institution: "Université de Rouen Normandie",
         location: "Rouen, France",
