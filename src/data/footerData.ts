@@ -24,5 +24,5 @@ export const footerData = {
     }
   ],
 
-  quote: '“L’élégance du code se voit dans sa simplicité.”'
+  quote: ''
 };
