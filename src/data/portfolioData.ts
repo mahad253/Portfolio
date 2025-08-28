@@ -1,7 +1,7 @@
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Dahaboo.com – Site d'annonces Achats/Ventes",
+    title: "Amélioration Dahaboo.com – Site d'annonces Achats/Ventes",
     summary:
         "Amélioration d'une plateforme existante de petites annonces permettant aux utilisateurs de publier, rechercher et gérer des annonces en ligne.",
     images: [
