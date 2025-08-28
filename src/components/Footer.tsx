@@ -37,9 +37,6 @@ const Footer = () => {
             </div>
 
             {/* Citation */}
-            <p>
-              <i>“L’élégance du code se voit dans sa simplicité.”</i>
-            </p>
 
             {/* Rien ici : suppression du lien vers GitHub */}
           </div>
