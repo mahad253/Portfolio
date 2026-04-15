@@ -3,7 +3,8 @@ import '@/styles/globals.css'
 import Layout from '../layouts/Layout.astro'
 import Hero from '@/components/Hero'
 import Experience from '@/components/Experience'
-import Education from '@/components/Education' // ✅ Ajout du composant
+import Education from '@/components/Education'
+import Certifications from '@/components/Certifications'
 import PortfolioFeed from '@/components/PortfolioFeed'
 import Footer from '@/components/Footer'
 import { config } from '../data/config'
@@ -12,29 +13,66 @@ import { config } from '../data/config'
 <Layout title="Portfolio – Mahad">
   <head>
     <title>Mahad – Développeur Full-Stack</title>
-    <meta name="description" content="Bienvenue sur mon portfolio personnel. Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par les technologies web, Odoo, DevOps et plus encore." />
-    <meta name="keywords" content="portfolio, Mahad, développeur full-stack, React, Spring Boot, DevOps, Odoo" />
+    <meta
+        name="description"
+        content="Bienvenue sur mon portfolio personnel. Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par les technologies web, Odoo, DevOps et plus encore."
+    />
+    <meta
+        name="keywords"
+        content="portfolio, Mahad, développeur full-stack, React, Spring Boot, DevOps, Odoo"
+    />
     <link rel="icon" href="/favicon.svg" />
 
     <!-- Métadonnées sociales pour prévisualisation -->
     <meta property="og:title" content="Mahad – Développeur Full-Stack" />
-    <meta property="og:description" content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné." />
+    <meta
+        property="og:description"
+        content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné."
+    />
     <meta property="og:url" content="https://portfolio-mahad.vercel.app/" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Mahad – Développeur Full-Stack" />
-    <meta name="twitter:description" content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné." />
+    <meta
+        name="twitter:description"
+        content="Portfolio de Mahad MOUSSA ABDILLAHI, développeur web full-stack passionné."
+    />
   </head>
 
   <main class="min-h-screen bg-background">
     <!-- Bouton de changement de thème -->
     <div class="fixed top-4 right-4 z-50">
-      <button id="theme-toggle" class="rounded-full border px-3 py-2 hover:bg-muted/40">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.485-8.485h-1M4.515 12H3m15.364 4.95l-.707-.707M7.05 7.05l-.707-.707M16.95 7.05l-.707.707M7.05 16.95l-.707.707M12 5a7 7 0 100 14 7 7 0 000-14z" />
+      <button
+          id="theme-toggle"
+          class="rounded-full border px-3 py-2 hover:bg-muted/40"
+      >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 dark:hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+          <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 3v1m0 16v1m8.485-8.485h-1M4.515 12H3m15.364 4.95l-.707-.707M7.05 7.05l-.707-.707M16.95 7.05l-.707.707M7.05 16.95l-.707.707M12 5a7 7 0 100 14 7 7 0 000-14z"
+          />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 hidden dark:block"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+          <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+          />
         </svg>
         <span class="sr-only">Changer le thème</span>
       </button>
@@ -43,7 +81,8 @@ import { config } from '../data/config'
     <!-- Sections -->
     <Hero client:load />
     <Experience client:visible />
-    <Education client:visible /> <!-- ✅ Section ajoutée proprement -->
+    <Education client:visible />
+    <Certifications client:visible />
     <PortfolioFeed client:visible />
     <Footer client:visible />
   </main>
