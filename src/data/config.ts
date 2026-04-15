@@ -1,6 +1,6 @@
 export const config = {
   siteTitle: 'Portfolio – Mahad',
-  description: `Bienvenue sur mon portfolio ! Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par les technologies web, la conception d’applications robustes et l’intégration de solutions modernes DevOps ou Kafka.`,
+  description: `Bienvenue sur mon portfolio ! Je suis Mahad MOUSSA ABDILLAHI, développeur full-stack passionné par les technologies web, la conception d’applications robustes et l’intégration de solutions modernes DevOps ou Kafka. J'ai également une première expérience en conception IA.`,
   author: 'Mahad MOUSSA ABDILLAHI',
   contactEmail: 'mahad.sociaux@gmail.com',
   keywords: 'portfolio, développeur full-stack, Spring Boot, React, Python, Kafka, Odoo, DevOps, développeur web, logiciel, messagerie, chat-service',
